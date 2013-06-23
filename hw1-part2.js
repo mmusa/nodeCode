@@ -2,18 +2,23 @@
 var fs = require('fs');
 var outfile = "myPrimes.txt";
 
-
-var myPrimes = new Array();
-var out = "2, ";
 var i =3;
-while (myPrimes.length() < 100)
+var myPrimes = new Array();
+myPrimes.push(2);
+
+while (myPrimes.length < 100)
 {
 	if (isPrime(i)) {
-		out += i;
-		out += ", ";
+		myPrimes.push(i);
 	}
 	++i;
 }
+var out = "";
+for (var x=0; x < myPrimes.length-1; x++) {
+	out += myPrimes[x]+ ", ";
+}
+
+out += myPrimes[myPrimes.length-1] + "\n"; 
 
 fs.writeFileSync(outfile, out);
 console.log("Script: " + __filename + "\nWrote: " + out + "To: " + outfile);
