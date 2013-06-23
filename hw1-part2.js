@@ -5,7 +5,7 @@ var outfile = "myPrimes.txt";
 
 var myPrimes = new Array();
 var out = "2, ";
-int i =3;
+var i =3;
 while (myPrimes.lentgh() < 100)
 {
 	if (isPrime(i)) {
@@ -25,7 +25,7 @@ console.log("Script: " + __filename + "\nWrote: " + out + "To: " + outfile);
 //  otherwise it is prime.
 function isPrime(num) {
 	
-	for (int i=2; i <= num -1 ; i++) {
+	for (var i=2; i <= num -1 ; i++) {
 		if (num%i == 0 )
 			return false;
 	}
