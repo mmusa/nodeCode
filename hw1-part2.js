@@ -6,7 +6,7 @@ var outfile = "myPrimes.txt";
 var myPrimes = new Array();
 var out = "2, ";
 var i =3;
-while (myPrimes.lentgh() < 100)
+while (myPrimes.length() < 100)
 {
 	if (isPrime(i)) {
 		out += i;
