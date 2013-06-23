@@ -15,7 +15,7 @@ while (myPrimes.length < 100)
 }
 var out = "";
 for (var x=0; x < myPrimes.length-1; x++) {
-	out += myPrimes[x]+ ", ";
+	out += myPrimes[x]+ ",";
 }
 
 out += myPrimes[myPrimes.length-1] + "\n"; 
